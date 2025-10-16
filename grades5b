@@ -4,8 +4,15 @@
 #took a quiz.  The integer grades (0-100)
 #are available to you.  Determine the
 #class average using a while loop.
-#Only programming techniques that have been 
+#Only programming techniques that have been
 #discussed in class may be used.
+#change grades5 so that it "error proofs" the inputs
+#acceptable number of students is between 1 and 25
+#acceptable grades are 0-100
+#also as the grades are input it should tell what grade is being input.
+#Enter grade 1:
+#Enter grade 2:
+#...
 
 ##set sum to zero
 summ = 0
@@ -16,7 +23,7 @@ gradeCounter = 1
 ##set totalStudents to the input value of the total number of students
 totalStudents = int(input("How many students are in class? "))
 print()
-while totalStudents < 1 or totalStudents > 25:
+while totalStudents < 1 or totalStudents > 25: #check for valid number of students (can't have no students and legally only 25 per class)
     print("That is an unacceptable amount of students, enter 1-25. ")
     print()
     totalStudents = int(input("How many students are in class? "))
