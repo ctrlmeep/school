@@ -1,0 +1,43 @@
+#Name: Benny Landon
+#Program Description: Write an application (MaxMin4) that reads the input of five integers and
+#determines and prints the largest , the smallest and the mean of the group.
+#Use only the programming techniques that have been discussed in the class so far.
+#Comment your code!
+#Due: 10/10/25
+
+#inputs
+firstNumber = int(input("Please enter in first number: "))
+secondNumber = int(input("Please enter in second number: "))
+thirdNumber = int(input("Please enter in third number: "))
+fourthNumber = int(input("Please enter in fourth number: "))
+fifthNumber = int(input("Please enter in fifth number: "))
+
+#largest/smallest
+largest = firstNumber
+smallest = firstNumber
+
+if secondNumber > largest:
+    largest = secondNumber
+elif secondNumber < smallest:
+    smallest = secondNumber
+
+if thirdNumber > largest:
+    largest = thirdNumber
+elif thirdNumber < smallest:
+    smallest = thirdNumber
+
+if fourthNumber > largest:
+    largest = fourthNumber
+elif fourthNumber < smallest:
+    smallest = fourthNumber
+
+if fifthNumber > largest:
+    largest = fifthNumber
+elif fifthNumber < smallest:
+    smallest = fifthNumber
+
+#output
+print()
+print("The largest number is: " + str(largest))
+print("The smallest number is: " + str(smallest))
+print("The mean of the 5 numbers is: " + str((firstNumber + secondNumber + thirdNumber + fourthNumber + fifthNumber) / 5)) #mean
