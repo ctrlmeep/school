@@ -1,0 +1,20 @@
+summ = 0
+gc = 1
+classSize = int(input("How many students are in class? "))
+print()
+while classSize < 1 or classSize > 25: 
+    print("That is an unacceptable amount of students, enter 1-25. ")
+    print()
+    classSize = int(input("How many students are in class? "))
+    print()
+while gc <= classSize:
+    grade = float(input("Enter grade " + str(gc) + ": "))
+    print()
+    while grade < 0 or grade > 100: 
+        print("That is an unacceptable grade, enter 1-100. ")
+        print()
+        grade = float(input("Enter grade " + str(gc) + ": "))
+        print()
+    summ += grade
+    gc += 1
+print("The class average is: " + str(summ / classSize))
