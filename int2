@@ -1,0 +1,25 @@
+#Benny Landon
+#Due: 9/19/25
+#Write an application that asks for and stores four integers.
+#Then displays the numbers on the same line, with each pair separated by one
+#space.  (horizontally on one line.)
+#It will display the numbers vertically on separate lines
+#It will display the sum of the four numbers
+firstNumber = int(input("What is the first number? "))
+secondNumber = int(input("What is the second number? "))
+thirdNumber = int(input("What is the third number? "))
+fourthNumber = int(input("What is the fourth number? "))
+
+print()
+print("The four numbers are:", firstNumber, secondNumber, thirdNumber, fourthNumber)
+print()
+
+print("The first number is", firstNumber)
+print("The second number is", secondNumber)
+print("The third number is", thirdNumber)
+print("The fourth number is", fourthNumber)
+print()
+
+totalSum = firstNumber + secondNumber + thirdNumber + fourthNumber
+print("The sum is", totalSum)
+
